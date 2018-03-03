@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="#" th:action="@{/user/add}" th:object="${user}" method="post">
+        <p>username: <input th:field="*{userName}" type="text"/></p>
+        <p>password: <input th:field="*{password}" type="password"/></p>
+        <p>phone: <input th:field="*{phone}" type="text"/></p>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
